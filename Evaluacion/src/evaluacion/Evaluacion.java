@@ -6,7 +6,13 @@ public class Evaluacion {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        Consultor i1 = new Consultor("", "", 0, 0, 0, 0);
+        Consultor i2 = new Consultor("", "", 0, 0, 0, 0);
+        Consultor i3 = new Consultor("", "", 0, 0, 0, 0);
+        Consultor i4 = new Consultor("", "", 0, 0, 0, 0);
+        Consultor i5 = new Consultor("", "", 0, 0, 0, 0);
+        Consultor i6 = new Consultor("", "", 0, 0, 0, 0);
+        
         String Nombre;
         String Domicilio;
         int Telefono;
@@ -26,6 +32,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese Sueldo\n Ingrese Impuestos ");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Sueldo = sc.nextInt();
@@ -35,6 +42,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese horas_trabajadas\n Ingrese el constructor que esta a cargo\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 horas_trabajadas = sc.nextInt();
@@ -44,14 +52,22 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese las Horas trabajadas\n Ingrese Tarifa\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Horas_trabajadas = sc.nextInt();
                 Tarifa = sc.nextInt();
-                Consultor i1 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
+                i1.setNombre(Nombre);
+                i1.setDomicilio(Domicilio);
+                i1.setTelefono(Telefono);
+                i1.setDNI(DNI);
+                i1.setHoras_trabajadas(Horas_trabajadas);
+               i1.setTarifa(Tarifa);
+             
+                //Consultor i1 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
             
         }
-        System.out.println("Ingrese 1 si quiere ingresaR un constructor\n Ingrese 2 si quiere ingresar un operador\n Ingrese 3 si quiere ingresar un consultor");
+        System.out.println("Ingrese 1 si quiere ingresar un constructor\n Ingrese 2 si quiere ingresar un operador\n Ingrese 3 si quiere ingresar un consultor");
       
         opcion = sc.nextInt();
         switch (opcion) {
@@ -59,6 +75,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese Sueldo\n Ingrese Impuestos ");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Sueldo = sc.nextInt();
@@ -68,6 +85,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese horas_trabajadas\n Ingrese el constructor que esta a cargo\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 horas_trabajadas = sc.nextInt();
@@ -77,11 +95,18 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese las Horas trabajadas\n Ingrese Tarifa\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Horas_trabajadas = sc.nextInt();
                 Tarifa = sc.nextInt();
-                Consultor i2 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
+                i2.setNombre(Nombre);
+                i2.setDomicilio(Domicilio);
+                i2.setTelefono(Telefono);
+                i2.setDNI(DNI);
+                i2.setHoras_trabajadas(Horas_trabajadas);
+                i2.setTarifa(Tarifa);
+                //Consultor i2 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
             
         }
         System.out.println("Ingrese 1 si quiere ingresaR un constructor\n Ingrese 2 si quiere ingresar un operador\n Ingrese 3 si quiere ingresar un consultor");
@@ -92,6 +117,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese Sueldo\n Ingrese Impuestos ");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Sueldo = sc.nextInt();
@@ -101,6 +127,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese horas_trabajadas\n Ingrese el constructor que esta a cargo\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 horas_trabajadas = sc.nextInt();
@@ -110,11 +137,18 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese las Horas trabajadas\n Ingrese Tarifa\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Horas_trabajadas = sc.nextInt();
                 Tarifa = sc.nextInt();
-                Consultor i3 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
+                i3.setNombre(Nombre);
+                i3.setDomicilio(Domicilio);
+                i3.setTelefono(Telefono);
+                i3.setDNI(DNI);
+                i3.setHoras_trabajadas(Horas_trabajadas);
+                i3.setTarifa(Tarifa);
+                //Consultor i3 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
             
         }
         System.out.println("Ingrese 1 si quiere ingresaR un constructor\n Ingrese 2 si quiere ingresar un operador\n Ingrese 3 si quiere ingresar un consultor");
@@ -125,6 +159,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese Sueldo\n Ingrese Impuestos ");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Sueldo = sc.nextInt();
@@ -134,6 +169,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese horas_trabajadas\n Ingrese el constructor que esta a cargo\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 horas_trabajadas = sc.nextInt();
@@ -143,11 +179,18 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese las Horas trabajadas\n Ingrese Tarifa\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Horas_trabajadas = sc.nextInt();
                 Tarifa = sc.nextInt();
-                Consultor i4 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
+                i4.setNombre(Nombre);
+                i4.setDomicilio(Domicilio);
+                i4.setTelefono(Telefono);
+                i4.setDNI(DNI);
+                i4.setHoras_trabajadas(Horas_trabajadas);
+                i4.setTarifa(Tarifa);
+               // Consultor i4 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
             
         }
         System.out.println("Ingrese 1 si quiere ingresaR un constructor\n Ingrese 2 si quiere ingresar un operador\n Ingrese 3 si quiere ingresar un consultor");
@@ -158,6 +201,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese Sueldo\n Ingrese Impuestos ");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Sueldo = sc.nextInt();
@@ -167,6 +211,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese horas_trabajadas\n Ingrese el constructor que esta a cargo\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 horas_trabajadas = sc.nextInt();
@@ -176,11 +221,18 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese las Horas trabajadas\n Ingrese Tarifa\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Horas_trabajadas = sc.nextInt();
                 Tarifa = sc.nextInt();
-                Consultor i5 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
+                i5.setNombre(Nombre);
+                i5.setDomicilio(Domicilio);
+                i5.setTelefono(Telefono);
+                i5.setDNI(DNI);
+                i5.setHoras_trabajadas(Horas_trabajadas);
+                i5.setTarifa(Tarifa);
+               // Consultor i5 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);
             
         }
         System.out.println("Ingrese 1 si quiere ingresaR un constructor\n Ingrese 2 si quiere ingresar un operador\n Ingrese 3 si quiere ingresar un consultor");
@@ -191,6 +243,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese Sueldo\n Ingrese Impuestos ");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Sueldo = sc.nextInt();
@@ -200,6 +253,7 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese horas_trabajadas\n Ingrese el constructor que esta a cargo\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 horas_trabajadas = sc.nextInt();
@@ -209,13 +263,34 @@ public class Evaluacion {
                 System.out.println("Ingrese el Nombre:\n Ingrese Domicilio:\n Ingrese el Telefono\n Ingrese DNI\n Ingrese las Horas trabajadas\n Ingrese Tarifa\n");
                 Nombre = sc.nextLine();
                 Domicilio = sc.nextLine();
+                sc.nextLine();
                 Telefono = sc.nextInt();
                 DNI = sc.nextInt();
                 Horas_trabajadas = sc.nextInt();
                 Tarifa = sc.nextInt();
-                Consultor i6 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);  
+                i6.setNombre(Nombre);
+                i6.setDomicilio(Domicilio);
+                i6.setTelefono(Telefono);
+                i6.setDNI(DNI);
+                i6.setHoras_trabajadas(Horas_trabajadas);
+                i6.setTarifa(Tarifa);
+                //Consultor i6 = new Consultor(Nombre, Domicilio, Telefono, DNI, Horas_trabajadas, Tarifa);  
         }
+       
+        String max;
+        if (i1.getHoras_trabajadas()>i2.getHoras_trabajadas() && i1.getHoras_trabajadas()>i3.getHoras_trabajadas() && i1.getHoras_trabajadas()>i4.getHoras_trabajadas() && i1.getHoras_trabajadas()>i5.getHoras_trabajadas() && i1.getHoras_trabajadas()>i6.getHoras_trabajadas()){
+            max=i1.getNombre();
+        }else if(i2.getHoras_trabajadas()>i3.getHoras_trabajadas() && i2.getHoras_trabajadas()>i4.getHoras_trabajadas() && i2.getHoras_trabajadas()>i5.getHoras_trabajadas() && i2.getHoras_trabajadas()>i6.getHoras_trabajadas()){
+            max=i2.getNombre();
+        }else if(i3.getHoras_trabajadas()>i4.getHoras_trabajadas() && i3.getHoras_trabajadas()>i5.getHoras_trabajadas() && i3.getHoras_trabajadas()>i6.getHoras_trabajadas()){
+            max=i3.getNombre();   
+        }else if (i4.getHoras_trabajadas()>i5.getHoras_trabajadas() && i4.getHoras_trabajadas()>i6.getHoras_trabajadas()){
+            max=i4.getNombre();
+        }else if (i5.getHoras_trabajadas()>i6.getHoras_trabajadas()){
+            max=i5.getNombre();
+        }else max=i6.getNombre();
         
-    }
-    
+            System.out.println("El consultor que trabaja mas horas es:"+ max);  
+      
+}
 }
